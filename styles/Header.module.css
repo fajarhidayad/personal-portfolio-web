@@ -1,0 +1,7 @@
+.navLinkActive {
+  @apply text-lg font-light border-b border-b-slate-800 transition-all ease-in duration-200
+}
+
+.navLinkInactive {
+  @apply  text-lg font-light hover:border-b hover:border-b-slate-800 transition-all ease-in duration-200
+}
