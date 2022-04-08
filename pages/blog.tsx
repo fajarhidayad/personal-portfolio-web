@@ -11,7 +11,7 @@ const BlogPage: NextPage = () => {
       <section className="font-light mt-16 w-1/2">
         <h1 className="text-4xl mb-5">Articles</h1>
         <h3 className="text-2xl">
-          Every experience and knowledge that I get, I share through writing
+          Any experience and knowledge that I get, I share through writing
         </h3>
       </section>
     </AnimationDiv>
