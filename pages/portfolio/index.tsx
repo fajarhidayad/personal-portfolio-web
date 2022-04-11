@@ -41,7 +41,7 @@ const PortfolioPage: NextPage<IProps> = ({ portfolio, error }) => {
           </h3>
         </section>
 
-        <section className="grid grid-cols-3 gap-6 mt-16 font-light">
+        <section className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-16 font-light">
           {portfolio.map((item) => {
             return (
               <PortfolioCard
