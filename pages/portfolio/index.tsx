@@ -11,6 +11,7 @@ interface IProps {
       attributes: {
         title: string;
         url: string;
+        repoUrl: string;
         image: {
           data: {
             attributes: {
@@ -46,6 +47,7 @@ const PortfolioPage: NextPage<IProps> = ({ portfolio, error }) => {
             return (
               <PortfolioCard
                 key={item.id}
+                repoUrl={item.attributes.repoUrl}
                 title={item.attributes.title}
                 href={item.attributes.url}
                 image={item.attributes.image.data.attributes.url}
@@ -71,6 +73,7 @@ export async function getStaticProps() {
       props: {
         portfolio: data,
       },
+      revalidate: 60,
     };
   } catch (error) {
     return {
